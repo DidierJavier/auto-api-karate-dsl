@@ -3,7 +3,7 @@ Feature: Validar creación de mascotas usando POST /pet
 
   Background:
     * url baseUrl
-    * def requestBody = read('classpath:examples/pet/data/request-body.json')
+    * def requestBody = read('classpath:api/pet/data/request-body.json')
     * def dynamicId = Math.floor(Math.random() * 100) + 1
 
   @custom1
